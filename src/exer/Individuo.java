@@ -7,9 +7,7 @@ public class Individuo {
     private String email;
 
     // Construtor
-    public Individuo(String nome,
-                     int idade,
-                     String email){
+    public Individuo(String nome, int idade, String email) {
 
         this.nome = nome;
         this.idade = idade;
@@ -17,34 +15,35 @@ public class Individuo {
     }
 
     // Getters
-    public String getNome(){
+    public String getNome() {
         return nome;
     }
 
-    public int getIdade(){
+    public int getIdade() {
         return idade;
     }
 
-    public String getEmail(){
+    public String getEmail() {
         return email;
     }
 
     // Setters
-    public void setNome(String nome){
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public void setIdade(int idade){
+    public void setIdade(int idade) {
         this.idade = idade;
     }
 
-    public void setEmail(String email){
+    public void setEmail(String email) {
         this.email = email;
     }
 
     // Função
-    public void apresentar(){
-        System.out.println("Nome: " + nome + ", idade: " + idade + ", imail: " + email);
+    public void apresentar() {
+        System.out.println("------------------------");
+        System.out.println("Nome: " + nome + ", Idade: " + idade + ", Email: " + email);
     }
 
 }

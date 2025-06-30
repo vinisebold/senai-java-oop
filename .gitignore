@@ -1,0 +1,38 @@
+# IntelliJ IDEA
+out/
+.idea/
+*.iml
+*.iws
+
+# Build
+/out/
+target/
+bin/
+build/
+
+# Logs e temporários
+*.log
+*.tmp
+*.swp
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Maven
+.mvn/
+!**/src/main/**
+!**/src/test/**
+pom.xml
+
+# Gradle
+.gradle/
+build/
+
+# Arquivos Java compilados
+*.class
+
+# Outros
+*.jar
+*.war
+*.ear

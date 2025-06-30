@@ -6,11 +6,7 @@ public class Candidato extends Individuo {
     private String curriculo;
 
     // Construtor
-    public Candidato(String nome,
-                     int idade,
-                     String email,
-                     int experienciaAnos,
-                     String curriculo) {
+    public Candidato(String nome, int idade, String email, int experienciaAnos, String curriculo) {
 
         super(nome, idade, email);
         this.experienciaAnos = experienciaAnos;
@@ -18,14 +14,13 @@ public class Candidato extends Individuo {
     }
 
     public void enviarCurriculo() {
-        System.out.println("Currículo Enviado!");
+        System.out.println("Currículo de " + getNome() +" enviado: " + curriculo);
     }
 
     @Override
     public void apresentar() {
         super.apresentar();
         System.out.println("Anos de experiência: " + experienciaAnos);
-        System.out.println("Currículo: " + curriculo);
     }
 
 }

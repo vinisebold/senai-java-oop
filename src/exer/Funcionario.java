@@ -4,12 +4,12 @@ public class Funcionario extends Individuo {
 
     private String cargo;
     private double salario;
-    private int departamento;
+    private String departamento;
 
     public Funcionario(String nome,
                        int idade,
                        String email,
-                       int departamento,
+                       String departamento,
                        double salario,
                        String cargo) {
 
@@ -19,16 +19,18 @@ public class Funcionario extends Individuo {
         this.cargo = cargo;
     }
 
-    public double calcularBonus() {
+    public double calcularBonus(double pBonus) {
+        return salario * pBonus;
+    }
 
-        return salario * 1.2;
+    public double getSalario() {
+        return salario;
     }
 
     @Override
     public void apresentar() {
         super.apresentar();
-        System.out.println("Departamento: " + departamento);
-        System.out.println("Salário: " + calcularBonus());
-        System.out.println("Cargo: " + cargo);
+        System.out.println("Departamento: " + departamento + ", Cargo: " + cargo + ", Salário: " + salario);
+        System.out.println("Bônus calculado: R$ " + calcularBonus(0.2));
     }
 }
